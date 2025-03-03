@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3eb;
+    color: #4b371c;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #8c6e53, #b2967d);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #4b371c;
+}
+
+/* Projects Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project {
+    background: #e9e2d0;
+    border: 1px solid #c5b89b;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: #5a4630;
+    border-bottom: 2px solid #c5b89b;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 2px #f7f3eb;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8c6e53;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.project a:hover {
+    background-color: #6b503a;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b371c;
+    color: #f7f3eb;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .project h2 {
+        font-size: 1.5rem;
+    }
+}
